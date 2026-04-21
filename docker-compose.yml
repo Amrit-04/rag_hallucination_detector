@@ -1,0 +1,16 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      RAG_OLLAMA_BASE_URL: "http://host.docker.internal:11434"
+      RAG_OLLAMA_MODEL: "llama3"
+      RAG_FAITHFULNESS_THRESHOLD: "0.62"
+    volumes:
+      - ./models:/app/models
+      - ./mlruns:/app/mlruns
+      - ./data:/app/data
+

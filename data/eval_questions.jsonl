@@ -1,0 +1,4 @@
+{"query":"How does this system decide when to fallback?","reference":"It combines semantic similarity, sentence support, and cross-encoder verification into a faithfulness score, then compares the score with a configurable threshold."}
+{"query":"Why use both Chroma vector search and BM25?","reference":"Dense search captures semantic similarity, while BM25 captures exact lexical overlap; weighted fusion combines both."}
+{"query":"What Ollama port does the local LLM API use by default?","reference":"Ollama exposes its HTTP API on port 11434 by default."}
+
