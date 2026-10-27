@@ -198,7 +198,7 @@ git init
 git add .
 git commit -m "Build production RAG hallucination detector API"
 git branch -M main
-git remote add origin https://github.com/<your-user>/<your-repo>.git
+git remote add origin https://github.com/Amrit-04/rag_hallucination_detector.git
 git push -u origin main
 ```
 
